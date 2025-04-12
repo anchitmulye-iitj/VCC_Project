@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+pydantic
+numpy
+tensorflow
+scipy
+scikit-learn
+joblib
+psycopg2-binary

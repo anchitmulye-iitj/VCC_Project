@@ -1,0 +1,16 @@
+version: '3.3'
+
+services:
+  ml-service:
+    image: anchitharman/ml-service:latest
+    container_name: ml-service-container
+    ports:
+      - "8000:8000"
+    restart: always
+    environment:
+      - PYTHONUNBUFFERED=1
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
